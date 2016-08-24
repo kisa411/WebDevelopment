@@ -1,0 +1,23 @@
+<html>
+
+<body>
+	<!--This is where the form will go-->
+	<form action="output.html" method="get"> <!--gets the HTML code/message from the specificed action file-->
+		Name: <input type="text" name="name"><br>
+		Country: <input type="text" list="country" name="countries"><br>
+		<datalist id="country"> <!--creates a list with possible countries, allows for autocomplete feature-->
+			<option value="UK">
+			<option value="USA">
+			<option value="Canada">
+			<option value="India">
+			<option value="S. Korea">
+		</datalist><br>
+		<input type="radio" name="sex" value="Male"> Male<br>
+		<input type="radio" name="sex" value="Female" checked="checked"> Female<br>
+		<!--add comments area-->
+		<textarea rows="4" cols="50">Leave us some comments so we can improve this site!</textarea>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+
+</html>

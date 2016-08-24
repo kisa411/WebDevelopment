@@ -1,0 +1,261 @@
+
+body {
+	background-color: white;
+	color: blue;
+	background-image: url("rain.jpg");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: 50% 50%;
+}
+/*CSS basic syntax: selector {property: value;}*/
+/* 
+selector - what HTML tag(s) does the property apply to?
+property - The property that's being altered/affected
+value - value of the property 
+*/
+
+/*BACKGROUND COLOR
+background-color = used for background color of an element
+background-image = used to insert a background image (also happens to override background-color if background image is repeated)
+	url("...") - indicates that the image is located in the same folder as the style sheet
+		You can also refer to images in other folders using url("../images/butterfly.gif") or even on the Internet indicating the full address of the file: url("http://www.html.net/butterfly.gif").
+background-repeat = repeat-x(repeated horizonally), repeat-y(repeated vertically), repeat(repeated horizontally and vertically), no-repeat(not repeated)
+background-attachment = scroll(image scrolls with page), fixed(image is locked)
+background-position = position an image anywhere on the screen (x, y coordinates)
+	background-position: 2cm 2cm (positioned 2cm from the left and 2cm down the page)
+	background-position: 50% 25% (positioned centrally and 1/4 down the page)
+	background-position: top right (positioned top-right corner of page) - available words: top, bottom, center, left, right;
+*/
+
+/*All of the above body background code can be compiled into a single line*/
+body {
+	background: white url("rain.jpg") no-repeat scroll 50% 50%;
+	color: blue;
+}
+
+h1 {
+	color: white;
+	background-color: purple;
+}
+/*color = used for foreground color of an element*/
+
+h1 {
+	font-family: monospace;
+	font-style: italic;
+}
+
+body {
+	font-family: arial, verdana, sans-serif;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size: 100%;
+}
+/*FONTS
+font-family = a list of fonts that can be used for the website, usually in the order of desired priority, recommended to complete the list with a generic font family so that it'll show up in at least some font
+font-style = normal, italic (slanted), oblique (slightly slanted)
+font-variant = normal or small-caps (uses smaller sized capitalized letters instead of lower case letters)
+font-weight = normal or bold, sometimes can use numbers between 100-900 (in hundreds) to describe the weight of a font
+font-size = size of font
+	eg. 30px or 12pt (fixes font size), 120% or 1em (allows users to adjust font size)
+
+*/
+
+/*All of the above body font code can be compiled into a single line
+
+The order of values for font is:
+
+font-style | font-variant | font-weight | font-size | font-family
+*/
+body {
+	font: normal small-caps bold 100% arial, verdana, sans-serif;
+}
+
+p {
+	text-indent: 50px;
+	font: normal small-caps 100% arial, verdana, sans-serif;
+	color: #b8375c;
+	text-align: justify;
+	text-decoration: overline underline;
+	letter-spacing: 2px;
+	text-transform: none;
+}
+/*TEXT
+text-indent = apply an indent to the first line of the paragraph
+text-align = can be aligned left, right, centered, or justify (stretches each line so that both the right and left margins are straight)
+text-decoration = adds different effects/decorations to the text
+	underline, overline, line-through
+letter-spacing = specifies letter spacing between text characters 
+text-transform = controls the capitalization of a text
+	capitalize (capitalizes the first letter of each word)
+	uppercase (converts all letters to uppercase)
+	lowercase (converts all letters to lowercase)
+	none (no transformations)
+*/
+
+a { /*links in HTML are specificed by the <a> tag*/
+	color: blue;
+}
+/*A link can have different states (eg. visited, not visited). You can use pseudo-classes to assign different styles to visited and unvisited links*/
+a:link { /*unvisited link*/
+	color: blue;
+}
+a:visited { /*visited link*/
+	color: purple;
+}
+a:active { /*links that are active - code happens the moment when it's clicked*/
+	color: yellow;
+}
+a:hover { /*when a mouse pointer hovers over a link*/
+	color: red;
+}
+/*LINKS
+Tip: If I want to remove the underline below links, then set text-decoration to none
+*/
+
+
+li.one {
+	color: orange;
+}
+li.two {
+	color: #b59cac;
+}
+#idid { /*id syntax*/
+	color: #8f1414;
+}
+/*CLASS and ID
+This is used when you want to apply a special type to a particular element or a particular group of elements.
+	class - specify the class of the element that's going to be affected (check HTML document for where class attribute is located) 
+
+	id - in addition to grouping elements, you might need to identify one unique element, which is done using the attribute id. There can not be two elements in the same document with th esame id!
+*/
+
+span.first {
+	color: blue;
+}
+span.second {
+	color: purple;
+}
+span.third {
+	color: red;
+}
+span.fourth {
+	color: orange;
+}
+
+#democrats {
+	background: blue;
+	color: white;
+}
+#republicans {
+	background: red;
+	color: white;
+}
+/*GROUPING OF ELEMENTS
+<span> - neutral element that doesn't add anything to the document itself, but in CSS it's used to add visual features to specific parts of text in the document. Used within a block-level element.
+
+<div> - used to group one or more block-level elements, but works in a similar way to <span>
+*/
+
+body {
+	margin-top: 50px;
+	margin-right: 40px;
+	margin-bottom: 10px;
+	margin-left: 70px;
+	/*OR: margin: 100px 40px 10px 70px;*/
+}
+
+h1 {
+	padding: 20px 20px 20px 20px;
+}
+
+h3 {
+	padding-left: 120px;
+}
+
+/*MARGIN AND PADDING
+Margins: An element has four sides - right,left, top and bottom. The margin is the distance from each side to the neighboring element (or the borders of the document).
+
+Padding: Also known as "filling", affects the inner distance between the border and the content of the element. 
+*/
+
+body {
+	border-width: 4px;
+	border-color: #b59cac;
+	border-style: double;
+}
+
+/*BORDERS
+You can also state special properties for top-, bottom-, right-, or left- borders
+	eg. border-top-width: thick;
+	    border-right-style: solid;
+
+Border-width: Can specify thin, medium, thick or a numeric value in pixels
+
+Border-color: Color of the border
+
+Border-style: dotted, dashed, solid, double, groove, ridge, inset, outset
+
+Border: an compile these properties into one using border
+	eg. 
+		p {
+			border: 1px solid blue;
+		} (order: width, style, color)
+*/
+
+body {
+	width: 750px;
+	/*height: 500px;*/
+}
+/*HEIGHT AND WIDTH
+width: define a certain width of an element
+height: define a certain height of an element
+*/
+
+#democrats { /*floats box to the left margin*/
+	float: left;
+	width: 200px;
+}
+
+#republicans { /*floats box to the right margin*/
+	float: right;
+	width: 200px;
+}
+/*FLOATING ELEMENTS
+An element can be floated to the right or left or none by using the property float. 
+*/
+
+p {
+	position: static;
+	/*bottom: 150px;*/
+}
+/*POSITIONING
+Static: default for every single page element, element flows into the page as it normally would
+Relative: element is positioned 'relative to itself', so if you give it some other positioning attribute (eg. top: 10px), element will shift its position 10pixels down from where it would normally be
+Absolute: allows element to be placed anywhere on the page
+Fixed: element is positioned relative to the viewport, or the browser window itself (location doesn't change when page is scrolled)
+*/
+
+
+/*Z-INDEX
+z-index: a higher z-index indicates that the element will be closer to the front
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
