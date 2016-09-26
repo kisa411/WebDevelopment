@@ -1,11 +1,5 @@
--travel
---Korea
---Japan
+
 --Dallas
---Study Abroad
-----Singapore
-----Thailand
-----Indonesia
 
 -life blog
 --daily blurbs
@@ -15,3 +9,11 @@
 --projects 
 --review on Codeschool vs codecademy
 --review on books
+
+
+// THINGS TO DO //
++upload content 
++style pages
++add pictures
++add menu bar (About Me, My Work, Travel Journal, Thoughts about Things, Life in Dallas)
++implement jQuery & Ajax, AngularJS <?>
