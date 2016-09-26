@@ -1,0 +1,17 @@
+-travel
+--Korea
+--Japan
+--Dallas
+--Study Abroad
+----Singapore
+----Thailand
+----Indonesia
+
+-life blog
+--daily blurbs
+
+-computer science projects & work
+--github link
+--projects 
+--review on Codeschool vs codecademy
+--review on books
