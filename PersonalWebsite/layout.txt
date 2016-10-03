@@ -2,13 +2,13 @@ css
 <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 
 -computer science projects & work
---github link
---projects 
---review on Codeschool vs codecademy
---review on books
-
 
 // THINGS TO DO //
 +style pages
+--adding background image
+
 +add menu bar (About Me, My Work, Travel Journal, Thoughts about Things, Life in Dallas)
++add buttons for github, LinkedIn
+
 +implement jQuery & Ajax, AngularJS <?>
+
