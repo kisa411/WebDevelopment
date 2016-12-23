@@ -7,8 +7,8 @@ css
 +style pages
 --adding background image
 
-+add menu bar (About Me, My Work, Travel Journal, Thoughts about Things, Life in Dallas)
++add menu bar (About Me, My Work, Contact Me)
 +add buttons for github, LinkedIn
 
-+implement jQuery & Ajax, AngularJS <?>
+
 
