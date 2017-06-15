@@ -1,0 +1,15 @@
+{
+  "name": "webproject",
+  "version": "1.0.0",
+  "description": "sample web project for Web Dev Udemy ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Emily Koh",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "ejs": "^2.5.5"
+  }
+}
