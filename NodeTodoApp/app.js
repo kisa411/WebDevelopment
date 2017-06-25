@@ -4,10 +4,17 @@ var mongoose = require('mongoose');
 var config = require('./config');
 var setupController = require('./controllers/setupController');
 var apiController = require('./controllers/apiController');
+var path = require('path');
 
 var port = process.env.PORT || 3000;
 
-app.use('/', express.static(__dirname + '/public'));
+// app.use('/', express.static(__dirname + '/public'));
+
+app.use('/', express.static(__dirname));
+
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + '/Public/index.html'));
+});
 
 app.set('view engine', 'ejs');
 
