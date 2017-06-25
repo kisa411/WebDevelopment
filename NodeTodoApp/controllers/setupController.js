@@ -7,14 +7,12 @@ module.exports = function(app) {
             {
                 username: 'kisa411',
                 todo: 'Plan Quebec Trip', 
-                isDone: false,
-                hasAttachment: false
+                isDone: false
             },
             {
                 username: 'kisa411',
                 todo: 'Clean Spuddy\'s room', 
-                isDone: false,
-                hasAttachment: false
+                isDone: false
             }
         ];
         Todos.create(starterTodos, function(err, results) {
