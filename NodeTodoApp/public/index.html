@@ -17,16 +17,6 @@
       <div class="navbar-header">
         <a class="navbar-brand" href="#">Todo App</a>
       </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Todo List<span class="sr-only">(current)</span></a></li>
-          <!--<li><a href="#">Add a Todo</a></li>
-          <li><a href="#">Update a Todo</a></li>
-          <li><a href="#">Delete a Todo</a></li>-->
-        </ul>
-      </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
 
@@ -35,14 +25,14 @@
     <!-- get the todos -->
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>Todo List</h3>
+        <h3>Things To Do</h3>
       </div>
 
       <div class="list panel-body">
         <div class="input-group">
-          <input class="" type="checkbox">Test todo 1<br>
-          <input class="" type="checkbox">Test todo 2<br>
-          <input class="" type="checkbox">Test todo 3<br>
+          <input class="delete-todo" type="checkbox">Test todo 1<br>
+          <input class="delete-todo" type="checkbox">Test todo 2<br>
+          <input class="delete-todo" type="checkbox">Test todo 3<br>
         </div>
         <h5>Add a Todo</h5>
         <form class="add-todo input-group">
@@ -51,49 +41,13 @@
                 <i class="glyphicon glyphicon glyphicon-plus" area-hidden"true"></i>
               </button>
           </span>
-          <input class="form-control" placeholder="Add a todo item here..." type="text">
+          <input class="form-control" placeholder="What else needs to get done?" type="text">
         </form>
       </div>
     </div>
 
-    <!-- add a todo form -->
-    <!--<div class="panel panel-default">
-      <div class="panel-heading">
-        <h3>Add a todo</h3>
-      </div>
-      <div class="panel-body">
-        <form class="add-todo input-group">
-          Todo Item:<input class="form-control" placeholder="Add a todo item here..." type="text">
-          <button type="submit" class="btn btn-default">
-            <i class="glyphicon glyphicon glyphicon-plus" area-hidden"true"></i>
-          </button>
-        </form>
-      </div>
-
-    </div>-->
-
-    <!-- delete a todo form -->
-    <!--<div class="panel panel-default">
-      <div class="panel-heading">
-        <h3>Complete a todo</h3>
-      </div>
-      <div class="delete panel-body">
-
-      </div>
-
-    </div>-->
-
-    <!-- update a todo form -->
-    <!--<div class="panel panel-default">
-      <div class="panel-heading">
-        <h3>Update a todo</h3>
-      </div>
-      <div class="update panel-body">
-
-      </div>
-
-    </div>
-  </div>-->
+    
+  </div>
   
 
   <!-- JS -->
@@ -102,7 +56,5 @@
   <script src="node_modules/vue-resource/dist/vue-resource.js"></script>
   <!--<script src="app.js"></script>-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script>
-  <script src="node_modules/bootstrap/js/collapse.js"></script> 
-  <script src="node_modules/bootstrap/js/transition.js"></script> 
 </body>
 </html>
