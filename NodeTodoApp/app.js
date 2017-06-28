@@ -8,13 +8,12 @@ var path = require('path');
 
 var port = process.env.PORT || 3000;
 
-// app.use('/', express.static(__dirname + '/public'));
+// serve images, CSS files, and javascript files in the 'public' directory
+app.use(express.static('public'));
+
 
 app.use('/', express.static(__dirname));
 
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/Public/index.html'));
-});
 
 app.set('view engine', 'ejs');
 
