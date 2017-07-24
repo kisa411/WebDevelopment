@@ -69,7 +69,7 @@
 
             <div class="technical-skills section-header">
                 <p>
-                    Languages: HTML, CSS, Javascript, Coldfusion, PHP, SQL, Node.js, C, C++, Java
+                    Languages: HTML, CSS, Javascript, Coldfusion, PHP, SQL, Node.js, Python, C, C++, Java
                 </p>
                 <p>
                     Applications: Visual Studio Code, Sublime, SQL Server, Tableau
