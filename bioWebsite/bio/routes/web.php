@@ -19,8 +19,8 @@ Route::get('aboutme', function () {
     return view('aboutme');
 });
 
-Route::get('projects', function () {
-    return view('projects');
+Route::get('career', function () {
+    return view('career');
 });
 
 Route::get('contactme', function () {

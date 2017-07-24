@@ -28,5 +28,6 @@
             My secondary goal is to become a more well-rounded developer, and I am working towards achieving this goal by actively learning new languages/technologies and also developing more experience with subjects I am already familiar with. Right now my current interest is learning more about web development (Javascript, web frameworks).
             </p>
         </div>
+
     </body>
 </html>

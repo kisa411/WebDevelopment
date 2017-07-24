@@ -74,7 +74,7 @@
 
                 <div class="links">
                     <a href="aboutme">About Me</a>
-                    <a href="projects">Projects</a>
+                    <a href="career">Professional Information</a>
                     <a href="contactme">Contact Me</a>
                 </div>
             </div>
