@@ -11,10 +11,6 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div class="header-name">
-            Emily Koh
-        </div>
-
         <div class="resume">
             
         </div>
@@ -22,6 +18,10 @@
         <div class="links">
             <a href="https://www.linkedin.com/in/emilykoh94/">LinkedIn</a>
             <a href="https://github.com/kisa411">Github</a>
+        </div>
+
+        <div class="project-links">
+            
         </div>
 
     </body>
