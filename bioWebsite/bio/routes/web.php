@@ -12,5 +12,18 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+Route::get('aboutme', function () {
+    return view('aboutme');
+});
+
+Route::get('projects', function () {
+    return view('projects');
+});
+
+Route::get('contactme', function () {
+    return view('contactme');
+});
+
