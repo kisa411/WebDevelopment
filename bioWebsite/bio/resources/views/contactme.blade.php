@@ -12,20 +12,20 @@
         <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            
-            <div class="content">
-                <div class="title m-b-md">
-                    Contact me! 
-                </div>
+        <div class="content">
+            <div class="title m-b-md">
+                Contact me! 
+            </div>
 
-                <div class="contact-me-form">
-                    <form action="send_form.php" method="post" name="contact_me">
-                        Name: <input type="text" name="name" required><br>
-                        Email Address: <input type="text" name="email" required><br>
-                        Message: <input type="text" name="message" required><br>
-                    </form>
-                </div>
+            <div class="contact-me-form input-group">
+                <form action="send_form.php" method="post" name="contact_me">
+                    <span class="input-group-addon" id="basic-addon1">Name</span>
+                    <input type="text" name="name" placeholder="Jane Doe" required><br>
+                    <span class="input-group-addon" id="basic-addon1">Email</span>
+                    <input type="text" name="email" placeholder="janedoe@email.com" required><br>
+                    <span class="input-group-addon" id="basic-addon1">Message</span>
+                    <input type="text" name="message" required><br>
+                </form>
             </div>
         </div>
     </body>
