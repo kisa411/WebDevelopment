@@ -1,0 +1,27 @@
+html, body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+.jumbotron {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    text-align: center;
+}
+
+.display-4 {
+    margin-bottom: 30px;
+}
+
+.links {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .05rem;
+    text-transform: uppercase;
+}

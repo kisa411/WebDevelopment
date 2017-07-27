@@ -25,6 +25,7 @@
                     <input type="text" name="email" placeholder="janedoe@email.com" required><br>
                     <span class="input-group-addon" id="basic-addon1">Message</span>
                     <input type="text" name="message" required><br>
+                    <button type="button" class="btn">Submit</button>
                 </form>
             </div>
         </div>

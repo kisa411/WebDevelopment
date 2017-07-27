@@ -15,10 +15,10 @@
         <link rel="stylesheet" href="{{ URL::asset('css/index.css') }}">
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="jumbotron">
             
             <div class="content">
-                <div class="title m-b-md">
+                <div class="display-4">
                     Emily Koh
                 </div>
 
