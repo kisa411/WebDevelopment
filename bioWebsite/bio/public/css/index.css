@@ -2,7 +2,7 @@ html, body {
     display: flex;
     height: 100vh;
     margin: auto;
-    background: 'background.jpg';
+    background-image: url('../images/background.jpg');
 }
 
 a {
