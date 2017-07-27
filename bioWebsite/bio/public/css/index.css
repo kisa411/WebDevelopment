@@ -2,6 +2,11 @@ html, body {
     display: flex;
     height: 100vh;
     margin: auto;
+    background: 'background.jpg';
+}
+
+a {
+    color: #64b6ac;
 }
 
 .jumbotron {
