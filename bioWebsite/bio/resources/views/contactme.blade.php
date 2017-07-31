@@ -23,16 +23,44 @@
                 Contact me! 
             </div>
 
-            <div class="contact-me-form input-group">
-                <form action="send_form.php" method="post" name="contact_me">
-                    <span class="input-group-addon" id="basic-addon1">Name</span>
-                    <input type="text" name="name" placeholder="Jane Doe" required><br>
-                    <span class="input-group-addon" id="basic-addon1">Email</span>
-                    <input type="text" name="email" placeholder="janedoe@email.com" required><br>
-                    <span class="input-group-addon" id="basic-addon1">Message</span>
-                    <input type="text" name="message" required><br>
-                    <button type="button" class="btn">Submit</button>
-                </form>
+            <div class="contact-me-form">
+                <ul>
+                    @foreach($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+
+                {!! Form::open(array('route' => 'contact_store', 'class' => 'form')) !!}
+
+                <div class="form-group">
+                    {!! Form::label('Your Name') !!}
+                    {!! Form::text('name', null, 
+                        array('required', 
+                            'class'=>'form-control', 
+                            'placeholder'=>'Your name')) !!}
+                </div>
+
+                <div class="form-group">
+                    {!! Form::label('Your E-mail Address') !!}
+                    {!! Form::text('email', null, 
+                        array('required', 
+                            'class'=>'form-control', 
+                            'placeholder'=>'Your e-mail address')) !!}
+                </div>
+
+                <div class="form-group">
+                    {!! Form::label('Your Message') !!}
+                    {!! Form::textarea('message', null, 
+                        array('required', 
+                            'class'=>'form-control', 
+                            'placeholder'=>'Your message')) !!}
+                </div>
+
+                <div class="form-group">
+                    {!! Form::submit('Contact Us!', 
+                    array('class'=>'btn btn-primary')) !!}
+                </div>
+                {!! Form::close() !!}
             </div>
         </div>
     </body>
