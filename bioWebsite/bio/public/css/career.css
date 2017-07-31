@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.resume-header {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}

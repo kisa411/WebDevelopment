@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.title .m-b-md {
+    padding: 20px;
+}
