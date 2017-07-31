@@ -59,7 +59,7 @@
                     Relevant Experience 
                     <p>
                         Summer 2015 - Spring 2016<br>
-                        <strong>Undergraduate Research Assistant</strong>, <em>CeNSA (Interdisciplinary Center for Network Science &amp; Applications)</em>, Notre Dame, IN.<br>
+                        <strong>Undergraduate Research Assistant</strong>, <em>iCeNSA (Interdisciplinary Center for Network Science &amp; Applications)</em>, Notre Dame, IN.<br>
                         <ul class="description">
                             <li>Collaborated with one graduate student to investigate the impact of digitalized healthcare on the wellness of the senior population.</li>
                             <li>Analyzed data obtained from a small-scale implementation of mobile application using Python for data analysis.</li>
@@ -102,8 +102,9 @@
         <br>
 
         <div class="links">
-            <a href="https://www.linkedin.com/in/emilykoh94/"><img alt="linkedin profile" width="200" height="50" title="Connect with me on LinkedIn" src="{{URL::asset('/images/linkedin.png')}}"></a>
-            <a href="https://github.com/kisa411"><img alt="github profile" width="100" height="50" title="Check out my Github Profile!" src="{{URL::asset('/images/github.png')}}"></a>
+            <span class="links-header">Relevant Links</span><br>
+            <a href="https://www.linkedin.com/in/emilykoh94/"><img alt="linkedin profile" width="200" height="50" title="Connect with me on LinkedIn!" src="{{URL::asset('/images/linkedin.png')}}"></a>
+            <a href="https://github.com/kisa411"><img alt="github profile" width="150" height="50" title="Check out my Github Profile!" src="{{URL::asset('/images/github.png')}}"></a>
         </div>
 
         <div class="project-links">
