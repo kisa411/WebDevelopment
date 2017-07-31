@@ -13,6 +13,9 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ URL::asset('css/index.css') }}">
+        
+        <!-- Scripts -->
+        <script type="text/javascript" src="{{ asset('js/index.js') }}"></script>
     </head>
     <body>
         <div class="jumbotron">
