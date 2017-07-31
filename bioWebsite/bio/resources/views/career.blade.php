@@ -102,8 +102,8 @@
         <br>
 
         <div class="links">
-            <a href="https://www.linkedin.com/in/emilykoh94/">LinkedIn</a>
-            <a href="https://github.com/kisa411">Github</a>
+            <a href="https://www.linkedin.com/in/emilykoh94/"><img alt="linkedin profile" width="200" height="50" title="Connect with me on LinkedIn" src="{{URL::asset('/images/linkedin.png')}}"></a>
+            <a href="https://github.com/kisa411"><img alt="github profile" width="100" height="50" title="Check out my Github Profile!" src="{{URL::asset('/images/github.png')}}"></a>
         </div>
 
         <div class="project-links">
