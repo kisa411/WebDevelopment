@@ -9,7 +9,14 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+        <!-- Styles  -->
         <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ URL::asset('css/career.css') }}">
+        
+        <!-- Scripts -->
+        <script type="text/javascript" src="{{ asset('js/career.js') }}"></script>
+
     </head>
     <body>
         <div class="resume">

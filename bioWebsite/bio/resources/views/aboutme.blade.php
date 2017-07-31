@@ -9,7 +9,13 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+        <!-- Styles  -->
         <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ URL::asset('css/aboutme.css') }}">
+        
+        <!-- Scripts -->
+        <script type="text/javascript" src="{{ asset('js/aboutme.js') }}"></script>
     </head>
     <body>
         <div class="header-name">
