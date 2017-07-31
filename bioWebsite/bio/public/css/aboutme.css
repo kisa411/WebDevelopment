@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.header-name {
+    padding: 20px;
+}
+
+.personal-bio {
+    text-indent: 5%;
+}
