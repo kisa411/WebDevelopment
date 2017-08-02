@@ -18,19 +18,31 @@
         <script type="text/javascript" src="{{ asset('js/index.js') }}"></script>
     </head>
     <body>
-        <div class="main-banner">
-            
-            <div class="content">
-                <div class="display-4">
-                    Emily Koh
-                </div>
+        <div class="container">
+            <div class="circle-decoration banner-top">
+                <div id="circle"></div>
+                <div id="circle"></div>
+                <div id="circle"></div>
+            </div>
+            <div class="main-banner">
+                
+                <div class="content">
+                    <div class="display-4">
+                        Emily Koh
+                    </div>
 
-                <div class="links">
-                    <a href="aboutme">About Me</a>
-                    <a href="career">Professional Information</a>
-                    <a href="contactme">Contact Me</a>
+                    <div class="links">
+                        <a href="aboutme">About Me</a>
+                        <a href="career">Professional Information</a>
+                        <a href="contactme">Contact Me</a>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="circle-decoration banner-bottom">
+                <div id="circle"></div>
+                <div id="circle"></div>
+                <div id="circle"></div>
+            </div>
+        </div class="container">
     </body>
 </html>
