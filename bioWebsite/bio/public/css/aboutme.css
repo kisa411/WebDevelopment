@@ -3,14 +3,31 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     margin: auto;
+    background-color: #8DA7BE;
+}
+
+.main-banner {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #D7BCC8;
+    margin: auto;
+    margin-top: 2%;
+    width: 100%;
+    padding: 4%;
 }
 
 .header-name {
     padding: 20px;
+    color: #EBF2FA;
 }
 
 .personal-bio {
     text-indent: 5%;
+    width: 80%;
+    margin-top: 2%;
+    font-size: 13px;
+    color: #DCDCDC;
 }

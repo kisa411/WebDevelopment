@@ -18,7 +18,7 @@
         <script type="text/javascript" src="{{ asset('js/index.js') }}"></script>
     </head>
     <body>
-        <div class="jumbotron">
+        <div class="main-banner">
             
             <div class="content">
                 <div class="display-4">

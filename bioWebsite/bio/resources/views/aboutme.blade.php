@@ -18,8 +18,10 @@
         <script type="text/javascript" src="{{ asset('js/aboutme.js') }}"></script>
     </head>
     <body>
-        <div class="header-name">
-            Emily Koh
+        <div class="main-banner">
+            <div class="header-name">
+                <h3>Nice to meet you!</h3>
+            </div>
         </div>
 
         <div class="personal-bio">
