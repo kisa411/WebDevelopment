@@ -19,46 +19,6 @@ a:hover {
     text-decoration: none;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 100%;
-    position: relative;
-}
-
-.container > * {
-    position: absolute;
-}
-
-.circle-decoration {
-    display: flex;
-}
-
-.circle-decoration.banner-top {
-    display: flex;
-    justify-content: flex-end; 
-    margin-bottom: -14%;
-    margin-top: auto;
-    z-index: 2;
-}
-
-.circle-decoration.banner-bottom {
-    display: flex;
-    margin-bottom: auto;
-    margin-top: -14%;
-    z-index: 2;
-}
-
-#circle {
-    width: 30px;
-    height: 30px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 15px;
-    background: #725E57;
-    margin: 1%;
-}
 
 .main-banner {
     align-items: center;
