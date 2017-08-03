@@ -18,6 +18,10 @@ a:hover {
     text-decoration: none !important;
 }
 
+a:visited {
+    text-decoration: none !important;
+}
+
 .main-banner {
     align-items: center;
     display: flex;

@@ -17,6 +17,10 @@ a:hover {
     text-decoration: none !important;
 }
 
+a:visited {
+    text-decoration: none !important;
+}
+
 .title .m-b-md {
     padding: 20px;
 }
