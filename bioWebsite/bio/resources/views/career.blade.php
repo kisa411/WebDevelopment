@@ -15,12 +15,27 @@
         <link rel="stylesheet" href="{{ URL::asset('css/career.css') }}">
         
         <!-- Scripts -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="{{ asset('js/career.js') }}"></script>
         <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     </head>
     <body>
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="">Home</a>
+                    <a class="nav-item nav-link" href="aboutme">About Me</a>
+                    <a class="nav-item nav-link active" href="career">Professional Information</a>
+                    <a class="nav-item nav-link" href="contactme">Contact Me</a>
+                </div>
+            </div>
+        </nav>
+
         <div class="main-banner">
             <div class="header-name">
                 <h3>Professional Information</h3>

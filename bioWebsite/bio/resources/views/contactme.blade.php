@@ -15,11 +15,27 @@
         <link rel="stylesheet" href="{{ URL::asset('css/contactme.css') }}">
         
         <!-- Scripts -->
-        <script type="text/javascript" src="{{ asset('js/contactme.js') }}"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="{{ asset('js/index.js') }}"></script>
         <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
-        
+
     </head>
     <body>
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="">Home</a>
+                    <a class="nav-item nav-link" href="aboutme">About Me</a>
+                    <a class="nav-item nav-link" href="career">Professional Information</a>
+                    <a class="nav-item nav-link active" href="contactme">Contact Me</a>
+                </div>
+            </div>
+        </nav>
+
         <div class="content">
             <div class="title m-b-md">
                 Contact me! 
