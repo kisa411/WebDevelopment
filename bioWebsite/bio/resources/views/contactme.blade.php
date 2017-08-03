@@ -16,6 +16,8 @@
         
         <!-- Scripts -->
         <script type="text/javascript" src="{{ asset('js/contactme.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+        
     </head>
     <body>
         <div class="content">
