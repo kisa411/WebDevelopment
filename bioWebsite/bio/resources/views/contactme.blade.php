@@ -1,3 +1,10 @@
+<?php
+//composer require mailgun/mailgun-php:~1.7.2
+# Include the Autoloader (see "Libraries" for install instructions)
+require 'vendor/autoload.php';
+use Mailgun\Mailgun;
+?>
+
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
@@ -42,44 +49,45 @@
             </div>
 
             <div class="contact-me-form">
-                <ul>
-                    @foreach($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-
-                {!! Form::open(array('route' => 'contact_store', 'class' => 'form')) !!}
-
-                <div class="form-group">
-                    {!! Form::label('Your Name') !!}
-                    {!! Form::text('name', null, 
-                        array('required', 
-                            'class'=>'form-control', 
-                            'placeholder'=>'Your name')) !!}
-                </div>
-
-                <div class="form-group">
-                    {!! Form::label('Your E-mail Address') !!}
-                    {!! Form::text('email', null, 
-                        array('required', 
-                            'class'=>'form-control', 
-                            'placeholder'=>'Your e-mail address')) !!}
-                </div>
-
-                <div class="form-group">
-                    {!! Form::label('Your Message') !!}
-                    {!! Form::textarea('message', null, 
-                        array('required', 
-                            'class'=>'form-control', 
-                            'placeholder'=>'Your message')) !!}
-                </div>
-
-                <div class="form-group">
-                    {!! Form::submit('Contact Us!', 
-                    array('class'=>'btn btn-primary')) !!}
-                </div>
-                {!! Form::close() !!}
+                <h2>Send Email</h2>
+                <form action="index.php" method="post">
+                <label class="form-field">Name:</label>
+                <input type="text" name="name" id="to" placeholder="John Doe"/>
+                <label class="form-field">Email Address:</label>
+                <input type="text" name="email" id="to" placeholder="johndoe@gmail.com"/>
+                <label class="form-field">Subject:</label>
+                <input type="text" name="subject" id="subject" placeholder="Hello!" required />
+                <label class="form-field">Message:</label><div class="clr"></div>
+                <textarea type="text" name="msg" id="msg" placeholder="Enter your message here.." required ></textarea>
+                <input type="submit" value="Send" name="submit"/>
+                </form>
             </div>
         </div>
     </body>
 </html>
+
+<?php
+    if (isset($_POST['name'], $_POST['email'], $_POST['subject'],$_POST['msg'])) {
+        $sname=$_POST['name'];
+        $email = $_POST['email'];
+        $subject = $_POST['subject'];
+        $msg = $_POST['msg'];
+
+        $mgClient = new Mailgun('key-9a8fee8b6f385d89c079a51815d301cf');
+        // Enter domain which you find in Default Password
+        $domain = "sandbox5fbbacde30104101874dab851b50ddff.mailgun.org";
+
+        # Make the call to the client.
+        $result = $mgClient->sendMessage($domain, array(
+            "from" => "$name <$email>",
+            "to" => "Emily <kisa411@.$domain>",
+            "subject" => "$subject",
+            "text" => "$msg"
+        ));
+
+        echo "<script>alert('Thank you for your email!');</script>";
+    }
+    else {
+        echo "<script>alert('Please fill in all fields in the form.')</script>";
+    }
+?>
