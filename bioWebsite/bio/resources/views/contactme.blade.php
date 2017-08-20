@@ -50,7 +50,7 @@ use Mailgun\Mailgun;
 
             <div class="contact-me-form">
                 <h2>Send Email</h2>
-                <form action="index.php" method="post">
+                <form action="contactme.blade.php" method="post">
                 <label class="form-field">Name:</label>
                 <input type="text" name="name" id="to" placeholder="John Doe"/>
                 <label class="form-field">Email Address:</label>
