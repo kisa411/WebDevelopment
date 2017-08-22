@@ -3,8 +3,9 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     margin: auto;
+    background-color: #8DA7BE;
 }
 
 a {
@@ -21,8 +22,20 @@ a:visited {
     text-decoration: none !important;
 }
 
-.title .m-b-md {
+.main-banner {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #D7BCC8;
+    margin: auto;
+    margin-top: 5%;
+    width: 100%;
+    padding: 4%;
+}
+
+.header-name {
     padding: 20px;
+    color: #EBF2FA;
 }
 
 .navbar.navbar-toggleable-md.navbar-light {

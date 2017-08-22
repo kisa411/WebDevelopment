@@ -1,7 +1,7 @@
 <?php
 //composer require mailgun/mailgun-php:~1.7.2
 # Include the Autoloader (see "Libraries" for install instructions)
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 use Mailgun\Mailgun;
 ?>
 
@@ -18,7 +18,7 @@ use Mailgun\Mailgun;
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
         <!-- Styles  -->
-        <link rel="ƒstylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ URL::asset('css/contactme.css') }}">
         
         <!-- Scripts -->
@@ -43,25 +43,24 @@ use Mailgun\Mailgun;
             </div>
         </nav>
 
-        <div class="content">
-            <div class="title m-b-md">
-                Contact me! 
+        <div class="main-banner">
+            <div class="header-name">
+                <h3>Contact Me!</h3>
             </div>
+        </div>
 
-            <div class="contact-me-form">
-                <h2>Send Email</h2>
-                <form action="contactme.blade.php" method="post">
-                <label class="form-field">Name:</label>
-                <input type="text" name="name" id="to" placeholder="John Doe"/>
-                <label class="form-field">Email Address:</label>
-                <input type="text" name="email" id="to" placeholder="johndoe@gmail.com"/>
-                <label class="form-field">Subject:</label>
-                <input type="text" name="subject" id="subject" placeholder="Hello!" required />
-                <label class="form-field">Message:</label><div class="clr"></div>
-                <textarea type="text" name="msg" id="msg" placeholder="Enter your message here.." required ></textarea>
-                <input type="submit" value="Send" name="submit"/>
-                </form>
-            </div>
+        <div class="contact-form">
+            <form action="contactme" method="post">
+            <label class="form-field">Name:</label>
+            <input type="text" name="name" id="to" placeholder="John Doe"/><br>
+            <label class="form-field">Email Address:</label>
+            <input type="text" name="email" id="to" placeholder="johndoe@gmail.com"/><br>
+            <label class="form-field">Subject:</label>
+            <input type="text" name="subject" id="subject" placeholder="Hello!" required /><br>
+            <label class="form-field">Message:</label>
+            <textarea type="text" name="msg" id="msg" placeholder="Enter your message here" required ></textarea><br>
+            <input type="submit" value="Send" name="submit"/>
+            </form>
         </div>
     </body>
 </html>
