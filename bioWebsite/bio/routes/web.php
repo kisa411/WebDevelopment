@@ -23,10 +23,6 @@ Route::get('career', function () {
     return view('career');
 });
 
-Route::get('contactme', 
-    ['as' => 'contactme', 'uses' => 'contactController@create']
-);
-
-Route::post('contactme', 
-  ['as' => 'contact_store', 'uses' => 'contactController@store']
-);
+Route::get('contactme', function () {
+    return view('contactme');
+});

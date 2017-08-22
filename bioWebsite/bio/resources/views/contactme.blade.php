@@ -18,7 +18,7 @@ use Mailgun\Mailgun;
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
         <!-- Styles  -->
-        <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
+        <link rel="ƒstylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ URL::asset('css/contactme.css') }}">
         
         <!-- Scripts -->
