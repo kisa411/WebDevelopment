@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    background-color: #8DA7BE;
+}
+
+a {
+    color: #495D63 !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: #DCDCDC !important;
+    text-decoration: none !important;
+}
+
+a:visited {
+    text-decoration: none !important;
+}
+
+.main-banner {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #D7BCC8;
+    margin: auto;
+    margin-top: 2em;
+    width: 100%;
+    padding: 4%;
+}
+
+.header-name {
+    padding: 20px;
+    color: #EBF2FA;
+}
+
+.personal-bio {
+    text-indent: 5%;
+    width: 80%;
+    margin-top: 2%;
+    font-size: 13px;
+    color: #DCDCDC;
+}
+
+.navbar.navbar-toggleable-md.navbar-light {
+    width: 100%;
+    background-color: transparent;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+button.navbar-light, .navbar-toggler {
+    background-color: #D7BCC8;
+}
+
+button.navbar-light.navbar-brand.navbar-light.navbar-toggler {
+    color: #554640 !important;
+}
+
+.nav-link.active {
+    color: #FAC8CD !important;
+}
