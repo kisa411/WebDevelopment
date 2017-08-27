@@ -22,6 +22,10 @@ a:visited {
     text-decoration: none !important;
 }
 
+img {
+    margin: 2%;
+}
+
 .main-banner {
     align-items: center;
     display: flex;
@@ -36,6 +40,36 @@ a:visited {
 .header-name {
     padding: 20px;
     color: #EBF2FA;
+}
+
+.resume-header {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.links-header {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.resume, .links {
+    width: 80%;
+    margin-top: 2%;
+    font-size: 13px;
+    color: #DCDCDC;
+}
+
+.short-bio {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.section-header {
+    color: #554640;
+    font-size: 14px;
+    text-decoration: underline;
 }
 
 .navbar.navbar-toggleable-md.navbar-light {
@@ -55,37 +89,4 @@ button.navbar-light.navbar-brand.navbar-light.navbar-toggler {
 
 .nav-link.active {
     color: #FAC8CD !important;
-}
-
-.contact-form {
-    border-width: 2px;
-    border-style: solid;
-    padding: 4%;
-    margin: 3%;
-    border-color: #D7BCC8;
-}
-
-.form-field {
-    color: #EBF2FA;
-}
-
-input[type=text] {
-    width: 100%;
-    padding: 1%;
-    margin: auto;
-    border-radius: 5px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    border: none;
-}
-
-textarea {
-    width: 100%;
-    padding: 1%;
-    margin: auto;
-    border-radius: 5px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    border: none;
-    height: 200px;
 }

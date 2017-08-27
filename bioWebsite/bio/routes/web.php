@@ -23,6 +23,16 @@ Route::get('career', function () {
     return view('career');
 });
 
-Route::get('contactme', function () {
-    return view('contactme');
+Route::get('projects', function () {
+    return view('projects');
 });
+
+// Route::get('contactme', function () {
+//     return view('contactme');
+// });
+
+// // Route::post('contactme', array( ,'uses' => 'SendFormController@sendMessage'));
+// Route::post('contactme', function() {
+//     return view('contactme');
+// });
+
