@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Clock from './Clock.jsx';
+import { Form, FormControl, Button } from 'react-bootstrap'
 
 // index.js already contains ReactDOM, so no need to import it again
 
@@ -25,11 +26,14 @@ class App extends Component {
                     Countdown to {this.state.deadline}
                 </div>
                 <Clock deadline={this.state.deadline}/>
-                <input 
+                <Form inline>
+                <FormControl 
+                    className="Deadline-input"
                     placeholder="new date" 
                     onChange={ event => this.setState({newDeadline: event.target.value})}
                 />
-                <button onClick={() => this.changeDeadline()}>Submit</button>
+                <Button onClick={() => this.changeDeadline()}>Submit</Button>
+                </Form>
             </div>
         )
     }
