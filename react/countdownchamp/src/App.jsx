@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Clock from './Clock.jsx';
 
 // index.js already contains ReactDOM, so no need to import it again
 
@@ -23,12 +24,7 @@ class App extends Component {
                 <div className="App-title">
                     Countdown to {this.state.deadline}
                 </div>
-                <div>
-                    <div className="time clock-days">14 days</div>
-                    <div className="time clock-hours">30 hours</div>
-                    <div className="time clock-minutes">15 minutes</div>
-                    <div className="time clock-seconds">20 seconds</div>
-                </div>
+                <Clock deadline={this.state.deadline}/>
                 <input 
                     placeholder="new date" 
                     onChange={ event => this.setState({newDeadline: event.target.value})}
