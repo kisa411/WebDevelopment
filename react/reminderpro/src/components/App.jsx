@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { addReminder } from '../actions';
+import { addReminder, deleteReminder } from '../actions';
 
 
 class App extends Component {
@@ -12,9 +12,36 @@ class App extends Component {
     }
 
     addReminder() {
-        console.log('this', this);
         this.props.addReminder(this.state.text);
     }
+
+    deleteReminder(id) {
+        this.props.deleteReminder(id);
+    }
+
+    renderReminders() {
+        const { reminders } = this.props;
+        return (
+            <ul className="list-group col-sm-4">
+                {
+                    reminders.map(reminder => {
+                        return (
+                            <li key={reminder.id} className="list-group-item">
+                                <div className="list-item">{reminder.text}</div>
+                                <div 
+                                    className="list-item delete-button"
+                                    onClick={() => this.deleteReminder(reminder.id)}
+                                >
+                                    &#10005;
+                                </div>
+                            </li>
+                        )
+                    })
+                }
+            </ul>
+        )
+    }
+
 
     render() {
         return (
@@ -22,7 +49,7 @@ class App extends Component {
                 <div className="title">
                     <h1>Reminder Pro</h1>
                 </div>
-                <div className="form-inline">
+                <div className="form-inline reminder-form">
                     <div className="form-group">
                         <input
                             className="form-control"
@@ -38,9 +65,18 @@ class App extends Component {
                         Add Reminder
                     </button>
                 </div>
+                { this.renderReminders() }
             </div>
         )
     }
 }
 
-export default connect(null, {addReminder:addReminder})(App);
+function mapStateToProps(state) {
+    return {
+        reminders: state
+    }
+}
+
+// export default connect(null, {addReminder:addReminder, deleteReminder: deleteReminder})(App);
+
+export default connect(mapStateToProps, {addReminder, deleteReminder})(App);
